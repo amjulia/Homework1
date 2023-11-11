@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -18,10 +19,13 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1024px;
+    /*height: 1024px;*/
+}
+.top__content{
+    padding-bottom: 496px;
 }
 .title{
-    width: 788px;
+    max-width: 788.778px;
     color: #FFF;
     font-size: 64px;
     font-style: normal;
@@ -33,7 +37,7 @@ a {
 }
 
 .top__text{
-    width: 481px;
+    max-width: 481px;
     color: #FFF;
     font-size: 18px;
     font-style: normal;
@@ -55,6 +59,7 @@ a {
     font-weight: 400;
     line-height: normal;
     padding: 13px 74px;
+
    
 }
 .top__button:hover{
@@ -95,4 +100,46 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url
     font-weight: 600;
     line-height: 32px; 
 
+}
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top{
+
+    }
+    .title{
+        padding-top: 238px;
+        text-align: center;
+        font-size: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .top__text{
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
+        padding-bottom: 32px;
+    }
+    .top__text_bold{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .top__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 238px;
+    }
+    .game{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .game__img{
+        width: 343px;
+    }
 }
