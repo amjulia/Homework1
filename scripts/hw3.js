@@ -35,53 +35,32 @@ alert(Number(a) + Number(b));
 let monthNumber = prompt("Введите номер месяца");
 switch (monthNumber ) {
     case '1':
-        console.log("зима");
-        
-        break;
     case '2':
-        console.log("зима");
-        
-        break;
-    case '3':
-        console.log("весна");
-        
-        break;
-    case '4':
-        console.log("весна");
-        
-        break;
-    case '5':
-        console.log("весна");
-        
-        break;
-    case '6':
-        console.log("лето");
-            
-        break;
-    case '7':
-        console.log("лето");
-            
-        break;
-    case '8':
-        console.log("лето");
-                
-        break;
-    case '9':
-        console.log("осень");
-            
-        break;
-    case '10':
-        console.log("осень");
-                
-        break;
-    case '11':
-        console.log("осень");
-                
-        break;
     case '12':
         console.log("зима");
-                    
+    
         break;
+    
+    case '3':
+    case '4':
+    case '5':
+        console.log("весна");
+
+        break;
+    
+    case '6':
+    case '7':
+    case '8':
+        console.log("лето");
+            
+        break;
+    case '9':
+    case '10':
+    case '11':
+        console.log("осень");
+            
+        break;
+    
         
     default: console.log("Неверно ввели число");
         break;
@@ -121,3 +100,4 @@ console.log("Установите версию приложения для iOs �
     else{
         console.log("Установите версию приложения для Android по ссылке"); 
     }
+
