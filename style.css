@@ -150,6 +150,31 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url
     justify-content: center;
     gap: 32px;
 }
+.gametype__content_item3{
+    align-items: center;
+    text-align: center;
+}
+
+
+.gametype_item3{
+    background-image: url(img/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer{
+    background: #000915;
+}
+.footer__text{
+    color: #FFF;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-top: 32px;
+padding-bottom: 32px;
+text-align: center;
+}
 
 
 
@@ -223,4 +248,9 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url
         width: 100%;
       
     }
+    .gametype_item3{
+        background-image: url(img/bgmobile.jpg);
+        padding-bottom: 487px;
+    }
+  
 }
