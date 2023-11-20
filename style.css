@@ -103,28 +103,30 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url
     line-height: 32px; 
 
 }
-.seasons{
+.gametype{
     background: #000915;
-   display: flex;
-   column-gap: 128px;
+    display: flex;
+    column-gap: 128px;
     padding-top: 233px;
     padding-bottom: 233px;
 }
-.seasons__title{
+
+.gametype__title{
     color: #FFF;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
-.seasons__text{
+.gametype__text{
     color: #FFF;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
-    line-height: 32px; 
+    line-height: 32px;
+    
 }
-.seasons__button{
+.gametype__button{
     border-radius: 30px;
     background: #9C0332;
     color: #FFF;
@@ -137,21 +139,18 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url
     width: 234px;
     transition: all 1s;
     }
-    .seasons__button:hover{
+    .gametype__button:hover{
         background: #EB443F;
         transform: scale(1.05);
     }
-.seasons__content{
+.gametype__content{
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 32px;
 }
-.seasons-img{
-     width: 100%;
 
-}
 
 
 
@@ -196,25 +195,30 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url
     .game__img{
         width: 343px;
     }
-    .seasons{
+    .gametype{
         display: flex;
         flex-wrap: wrap;
+        padding-top: 51px;
+        padding-bottom: 85px;
     }
-    .seasons__content{
+    .gametype_item2{
+        flex-direction: column-reverse;
+    }
+    .gametype__content{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
-    .seasons__title{
+    .gametype__title{
         font-size: 32px
     }
-    .seasons__text{
+    .gametype__text{
         color: #FFF;
         text-align: center;
         font-size: 14px;
         line-height: 22px;
     }
-    .seasons-img{
+    .gametype-img{
         padding-top: 64px;
         width: 100%;
       
