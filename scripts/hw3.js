@@ -67,7 +67,7 @@ switch (monthNumber ) {
 }
 
 //Задание 7
-let evenNumber = Number(prompt("Пожалуйста, введите любое число"));
+let evenNumber = Number(prompt("Пожалуйста, введите любое число!!!"));
 if (!isNaN(evenNumber)) {
     if  (evenNumber % 2 == 0) {
         console.log('число четное');
