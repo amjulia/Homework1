@@ -1,12 +1,7 @@
 //Задание 1
 
 function less(a, b) {
-    if (a <= b) {
-        return a;
-        
-    } else {
-        return b;
-    }
+    return Math.min(a, b);
 }
 
 let result = less(10, 8);
@@ -29,13 +24,14 @@ console.log(evenNumber(45));
 //Задание 3.1
 
 function getnumberSquare(d) {
-    console.log(d**2);
+    console.log(Math.pow(d,2));
+    return Math.pow(d, 2);
 }
 getnumberSquare(5);
  
 //Задание 3.2
 
-let numberSquare = (num) => num**2;
+let numberSquare = (num) => Math.pow(num, 2);
  
 console.log(numberSquare(7));
  
@@ -46,7 +42,7 @@ function userAge() {
     let age = prompt('Сколько вам лет?');
         if (age <= 0) {
         console.log('Вы ввели неправильное значение');
-    } else if ( age < 12 && age > 0) {
+    } else if (age < 12) {
         console.log('Привет, друг!');
     }
     else 
@@ -60,7 +56,7 @@ userAge();
 
 function addedNumber(num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
-        return (`Одно или оба значения не являются числом`);
+        return ("Одно или оба значения не являются числом");
         
     } else {
         return num1*num2;
@@ -76,7 +72,7 @@ console.log(addedNumber('gh', 3));
 function userNum() {
     let enterNum = prompt('Введите число');
     if (isNaN(enterNum) ) {
-        return console.log(`Переданный параметр не является числом`);
+        return console.log("Переданный параметр не является числом");
     } else {
         return console.log(`${enterNum} в кубе равняется ${enterNum**3}`);
         
