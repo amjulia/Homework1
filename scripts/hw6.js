@@ -94,15 +94,13 @@ const numberSquare = arr11.map(function (num) {
 })
 console.log(numberSquare);
 
-//Задание 12 выводит не те значения
+//Задание 12
+
 let arrNew = [];
 function arrSum(num) {
     for (let i = 0; i < num.length; i++) {
-    let sum = num[i]+num[i+1];
-   console.log(sum.length);
-   arrNew.push(sum.length);
-         
-} 
+    arrNew.push(num[i].length);
+    } 
 } 
 arrSum(['слово', '', 'слог', 'длинное предложение', 'буква']);
 console.log(arrNew);
