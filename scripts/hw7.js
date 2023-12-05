@@ -86,3 +86,6 @@ function rusDate (date) {
 }
 rusDate(new Date());
 
+
+
+
