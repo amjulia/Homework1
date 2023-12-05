@@ -20,11 +20,7 @@ let arrNum = [1, 5, 4, 10, 0, 3];
 
  // Задание 4
 
- let arrs = [
-    [ , , ],
-    [ , , ],
-    [ , , ],
-];
+ let arrs = [[],[],[]];
 
 for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
@@ -43,8 +39,7 @@ console.log(arrMy);
 //Задание 6
 
 let lineNum = [9, 8, 7, 'a', 6, 5];
-lineNum = lineNum.sort();
-lineNum.pop();
+lineNum.sort((a, b) => a - b).pop();
 console.log(lineNum);
 
 //Задание 7
@@ -62,9 +57,7 @@ if (arr7.includes(question)) {
 //Задание 8
 
 let arr8 = 'abcdef';
-arr8 = arr8.split('')
-arr8 = arr8.reverse();
-arr8 = arr8.join('')
+arr8 = arr8.split('').reverse().join('')
 console.log(arr8);
 
 // 
@@ -89,26 +82,33 @@ for (let i = 0; (i < arr10.length - 1); i++) {
 //Задание 11
 
 const arr11 = [2, 5, 8, 3, 6];
-const numberSquare = arr11.map(function (num) {
-    return Math.pow(num, 2);
-})
-console.log(numberSquare);
+function getnumberSquare (arr11){
+  return arr11.map((num) => Math.pow(num, 2))
+}
+console.log(getnumberSquare(arr11));
+
 
 //Задание 12
+/*
 
-let arrNew = [];
 function arrSum(num) {
+  let arrNew = [];
     for (let i = 0; i < num.length; i++) {
     arrNew.push(num[i].length);
     } 
+    return arrNew;
 } 
 arrSum(['слово', '', 'слог', 'длинное предложение', 'буква']);
-console.log(arrNew);
+console.log(arrNew); 
+*/
 
-
+function getLengthWords(words) {
+return words.map(word => word.length)  
+}
+console.log(getLengthWords(['слово', '', 'слог', 'длинное предложение', 'буква']));
 
 //Задание 13
-let fil =[];
+/* let fil =[];
 function filterPositive(array) {
     const even = array.filter(el => el < 0);   
     fil.push(even);
@@ -117,8 +117,21 @@ function filterPositive(array) {
 
   filterPositive([-1, 0, 5, -10, 56]);
   filterPositive([-25, 25, 0, -1000, -2])
-  console.log(fil);
+  console.log(fil);*/
 
+  function filterPositive(array) {
+    let result = [];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] < 0) {
+        result.push(array[i])
+      }
+    }
+    return result;
+  }
+  
+  console.log(filterPositive([-25, 25, 0, -1000, -2]));
+  console.log(filterPositive([-1, 0, 5, -10, 56]));
+  
   //Задание 14
 
   let array14 = [];
