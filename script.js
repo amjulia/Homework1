@@ -14,7 +14,22 @@ function gameSeasons() {
         }
          
     }
-    
+   
+function gameWords() {
+    let words = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+     words = words.sort(() => Math.random() - 0.5);
+     alert(words);
+     userQuestion1 = prompt("Введите первое слово массива");
+     userQuestion2 = prompt("Введите последнее слово массива");
+if (words[0].toLowerCase() === userQuestion1.toLowerCase() && words[words.length-1].toLowerCase() === userQuestion2.toLowerCase()) {
+    alert("Поздравляю, Вы угадали!")
+} else if (words[0].toLowerCase() === userQuestion1.toLowerCase() || words[words.length-1].toLowerCase() === userQuestion2.toLowerCase()) { 
+    alert("Вы были близки к победе!");
+}
+else {
+    alert("Вы ответили неверно");
+}
+ }
     
  
         
