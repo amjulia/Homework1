@@ -80,6 +80,7 @@ a {
     position: relative;
     display: block;
    border-radius: 16px;
+   width: 100%;
     
 }
 .game__item{
@@ -106,7 +107,6 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url
 .gametype{
     background: #000915;
     display: flex;
-    column-gap: 128px;
     padding-top: 233px;
     padding-bottom: 233px;
 }
@@ -149,7 +149,17 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url
     flex-direction: column;
     justify-content: center;
     gap: 32px;
+    padding-right: 128px;
 }
+.gametype__content_item2{
+    padding-right: 0;
+    padding-left: 128px;
+}
+.gametype__content_item3{
+    padding-right: 0;
+}
+
+
 .gametype__content_item3{
     align-items: center;
     text-align: center;
@@ -161,6 +171,7 @@ background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    column-gap: 0;
 }
 .footer{
     background: #000915;
